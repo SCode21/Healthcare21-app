@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kidney Specialist"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/etSearchDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Kidney Specialist..."
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        android:drawableLeft="@drawable/ic_search"
+        android:inputType="text" />
+
+    <!-- List of Kidney Specialists -->
+    <ListView
+        android:id="@+id/doctorListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <!-- RecyclerView for Kidney Specialists -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewKidney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

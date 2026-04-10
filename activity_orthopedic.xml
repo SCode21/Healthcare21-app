@@ -11,7 +11,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cardiologists"
+        android:text="Orthopedic Specialist"
         android:textSize="24sp"
         android:textStyle="bold"
         android:paddingBottom="10dp"
@@ -22,17 +22,24 @@
         android:id="@+id/etSearchDoctor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search Cardiologists..."
+        android:hint="Search Orthopedic Specialist..."
         android:padding="12dp"
         android:background="@drawable/search_background"
-        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:drawableLeft="@drawable/ic_search"
         android:inputType="text" />
 
-    <!-- List of Cardiologists -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewCardiologists"
+    <!-- List of Orthopedic Specialists -->
+    <ListView
+        android:id="@+id/doctorListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <!-- RecyclerView for Orthopedic Specialists -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrthopedic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:scrollbars="vertical" />
 </LinearLayout>

@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Doctor Name -->
+        <EditText
+            android:id="@+id/etDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Doctor Email -->
+        <EditText
+            android:id="@+id/etDoctorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Doctor Specialty -->
+        <EditText
+            android:id="@+id/etDoctorSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specialty"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Doctor Contact -->
+        <EditText
+            android:id="@+id/etDoctorContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Doctor Description -->
+        <EditText
+            android:id="@+id/etDoctorDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Appointment Details -->
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient: "
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor: "
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAppointmentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Only Chat Button -->
+        <Button
+            android:id="@+id/btnChatWithDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="CHAT WITH DOCTOR"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

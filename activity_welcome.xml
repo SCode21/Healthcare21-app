@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- App Logo (for secret gesture) -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/doctor_icon1"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Select Your Role"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <!-- Doctor Button -->
+    <Button
+        android:id="@+id/doctorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Doctor Login"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"/>
+
+    <!-- Patient Button -->
+    <Button
+        android:id="@+id/patientButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Patient Login"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"/>
+
+    <!-- Admin Button (Hidden by Default) -->
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Admin Login"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+</LinearLayout>

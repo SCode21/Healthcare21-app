@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".StepCountActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mainCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_walking"/>
+
+            <TextView
+                android:id="@+id/stepCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEPS"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/dailyGoalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="0% of daily goal (0/10,000 steps)"
+                android:textColor="@color/teal_800"
+                android:textSize="14sp"/>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="8dp"
+                app:trackColor="@color/teal_100"
+                app:trackThickness="8dp"
+                app:indicatorColor="@color/teal_700"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Today's Activity"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainCard"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#808080</color> <!-- Standard grey -->
+    <!-- Darker grey -->
+    <color name="blue">#2196F3</color> <!-- Example primary color for the button -->
+
+    <color name="green">#4CAF50</color>  <!-- You can use any shade of green -->
+    <color name="lavender">#9370DB</color>
+    <color name="whatsapp_sent_bubble">#DCF8C6</color>
+    <color name="whatsapp_received_bubble">#FFFFFF</color>
+
+    <color name="teal_700">#018786</color>
+
+    <color name="colorAccent">#03DAC5</color> <!-- This is the accent color -->
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple">#800080</color> <!-- Standard Purple -->
+
+    <!-- Theme-Specific Colors -->
+    <color name="my_light_primary">#6200EE</color>
+    <color name="my_dark_primary">#121212</color>
+
+
+    <color name="orange">#FF9800</color>
+
+
+        <!-- Background Colors -->
+        <color name="light_gray">#F5F5F5</color> <!-- Light gray for the screen background -->
+        <!-- White for the CardView background -->
+
+        <!-- Text Colors -->
+        <color name="black">#000000</color> <!-- Black for primary text -->
+        <color name="dark_gray">#666666</color> <!-- Dark gray for secondary text -->
+
+        <!-- Primary and Secondary Colors -->
+        <color name="primary_color">#6200EE</color> <!-- Purple for primary actions (buttons, icons) -->
+        <color name="secondary_color">#03DAC6</color> <!-- Teal for secondary actions (disabled buttons) -->
+
+        <!-- Button Text Color -->
+        <color name="white">#FFFFFF</color> <!-- White for button text -->
+<color name="Teal">#004b49</color>
+    <color name="lightblue">#add8e6</color>
+
+    <color name="pastAppointmentColor">#FF0000</color> <!-- Red for past -->
+    <color name="presentAppointmentColor">#00FF00</color> <!-- Green for present -->
+    <color name="upcomingAppointmentColor">#0000FF</color> <!-- Blue for upcoming -->
+    <color name="lightBackground">#F5F5F5</color> <!-- Example Light Background -->
+
+
+        <color name="doctor_bubble_color">#4CAF50</color> <!-- Green for doctor -->
+        <color name="patient_bubble_color">#6200EE</color> <!-- Purple for patient -->
+    <color name="bmi_underweight">#2196F3</color>
+    <color name="bmi_healthy">#4CAF50</color>
+    <color name="bmi_overweight">#FFC107</color>
+    <color name="bmi_obese">#F44336</color>
+
+        <color name="background">#F8F9FA</color>
+        <color name="primaryText">#212121</color>
+        <color name="secondaryText">#757575</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_800">#FF017374</color>
+    <color name="teal_100">#FFB2DFDB</color>
+
+
+    <color name="red">#F44336</color>
+
+        <color name="colorPrimary4">#2196F3</color>
+        <color name="colorPrimaryDark4">#1976D2</color>
+        <color name="colorAccent4">#FF4081</color>
+
+
+
+        <color name="colorPrimary1">#FF5722</color>
+        <color name="colorPrimaryDark">#E64A19</color>
+        <color name="colorAccent1">#FF9800</color>
+
+        <!-- For BottomNavigationView states -->
+        <color name="nav_item_selected">@color/colorPrimary</color>
+        <color name="nav_item_unselected">#757575</color>
+    </resources>
+

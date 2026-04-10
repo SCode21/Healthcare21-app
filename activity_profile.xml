@@ -1,0 +1,139 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_placeholder"
+            android:contentDescription="User profile picture"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:elevation="4dp"/>
+
+        <!-- Change Photo Button -->
+        <Button
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Full Name"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- DOB -->
+        <EditText
+            android:id="@+id/edtDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Date of Birth (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Gender -->
+        <EditText
+            android:id="@+id/edtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Gender"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Blood Group -->
+        <EditText
+            android:id="@+id/edtBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Blood Group"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Contact -->
+        <EditText
+            android:id="@+id/edtContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Address"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionNext"/>
+
+        <!-- Role (Optional) -->
+        <EditText
+            android:id="@+id/edtRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Role (doctor/patient/admin)"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_text_background"
+            android:imeOptions="actionDone"/>
+
+        <!-- Save Profile Button -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+  <!-- Patient Name -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Patient Age -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:minHeight="48dp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Patient Phone -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Patient Email (Disabled) -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:enabled="false"
+        android:clickable="false"
+        android:textColor="@android:color/black" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Save Button -->
+  <Button
+      android:id="@+id/btnSave"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="@color/colorPrimary"
+      android:text="Save Patient"
+      android:textColor="@android:color/white"
+      android:textAllCaps="false"
+      android:elevation="4dp"/>
+</LinearLayout>

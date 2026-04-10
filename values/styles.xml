@@ -1,0 +1,4 @@
+<resources>
+    <style name="LightTheme" parent="Theme.MaterialComponents.Light"/>
+    <style name="DarkTheme" parent="Theme.MaterialComponents.DayNight"/>
+</resources>

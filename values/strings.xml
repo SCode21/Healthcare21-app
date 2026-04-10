@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Health Care </string>
+    <string name="exercise_image_desc">Exercise demonstration image</string>
+    <string name="appointments_title">Appointments</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="appointment_time">Appointment Time</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">Close Navigation</string>
+
+    <string name="doctor_image">Doctor Image</string>
+
+    <string name="exercise_image">Exercise Image</string>
+
+    <string name="google_maps_key">AIzaSyCFRLB1KuD1dyN3asqgxMaS0AnlJcKIM5k</string>
+    <string name="select_degree_prompt">Select Degree</string>
+
+    <string name="fab_hospitals_description">Search for nearby hospitals</string>
+
+    <string-array name="degrees_array">
+        <item>Select Degree</item>
+        <item>MBBS</item>
+        <item>MD</item>
+        <item>MS</item>
+        <item>BDS</item>
+        <item>MDS</item>
+    </string-array>
+
+
+    <string name="app_name1">BMI Calculator</string>
+    <string name="underweight_label">\u003c18.5</string> <!-- Unicode for < -->
+    <string name="healthy_label">18.5-25</string>
+    <string name="overweight_label">25-30</string>
+    <string name="obese_label">30+</string>
+
+    <string name="underweight_tips">• Eat more nutrient-dense foods\n• Include healthy fats like nuts and avocados\n• Consider strength training to build muscle</string>
+    <string name="healthy_tips">• Maintain your current healthy habits\n• Exercise for at least 30 minutes daily\n• Eat a balanced diet with variety</string>
+    <string name="overweight_tips">• Increase physical activity gradually\n• Reduce processed foods and sugars\n• Drink water before meals\n• Get adequate sleep</string>
+    <string name="select_doctor_hint">Select a doctor</string>
+    <string name="doctor_dropdown_description">Doctor selection dropdown. Tap to choose a doctor from the list</string>
+    <string name="select_doctor_error">Please select a doctor</string>
+
+    <string name="splash_image_desc">App splash screen</string>
+    <string name="lets_go">Let\'s Go</string>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Other theme attributes -->
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+    </style>
+
+</resources>
+

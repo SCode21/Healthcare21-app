@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.signuploginfirebasee">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <!-- Optional features -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignUpLoginFirebasee"
+        tools:targetApi="31">
+
+        <!-- Launcher -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Services -->
+        <service
+            android:name=".StepCounterService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health" />
+
+        <!-- Activities -->
+        <activity android:name=".AddDoctorActivity" android:exported="false" />
+        <activity android:name=".StepCountActivity" android:exported="false" />
+        <activity android:name=".BMIHistoryActivity" android:exported="false" />
+        <activity android:name=".BMI" android:exported="false" />
+        <activity android:name=".FaqActivity" android:exported="false" />
+        <activity android:name=".ContactSupportActivity" android:exported="false" />
+        <activity android:name=".EmergencyContactActivity" android:exported="false" />
+        <activity android:name=".FeedbackActivity" android:exported="false" />
+        <activity android:name=".EditDoctorActivity" android:exported="false" />
+        <activity android:name=".MyDoctorAppointments" android:exported="false" />
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".AdminRegisterActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".Profile2Activity" android:exported="false" />
+        <activity android:name=".DoctorChatsActivity" android:exported="false" />
+        <activity android:name=".AppointmentDetailsActivity" android:exported="false" />
+        <activity android:name=".AppointmentConfirmationActivity" android:exported="false" />
+        <activity android:name=".HelpActivity" android:exported="false" />
+        <activity android:name=".PatientAddActivity" android:exported="false" />
+        <activity android:name=".ThankYouActivity" android:exported="false" />
+        <activity android:name=".DentistActivity" android:exported="false" />
+        <activity android:name=".NeurologistActivity" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".SignUpActivity" android:exported="true" />
+        <activity android:name=".DoctorSignupActivity" android:exported="true" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".DoctorHomeActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".DoctorProfileActivity" android:exported="false" />
+        <activity android:name=".CardiologistActivity" android:exported="false" />
+        <activity android:name=".KidneyActivity" android:exported="false" />
+        <activity android:name=".DermatologistActivity" android:exported="false" />
+        <activity android:name=".OrthopedicActivity" android:exported="false" />
+        <activity android:name=".ViewAppointmentsActivity" android:exported="false" />
+        <activity android:name=".ExerciseActivity" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".NearbyPlacesActivity" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:exported="false" />
+        <activity android:name=".AppointmentsActivity" android:exported="false" />
+        <activity android:name=".PaymentActivity" android:exported="false" />
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCFRLB1KuD1dyN3asqgxMaS0AnlJcKIM5k" />
+    </application>
+</manifest>
